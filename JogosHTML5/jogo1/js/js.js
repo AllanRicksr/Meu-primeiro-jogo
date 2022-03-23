@@ -36,6 +36,7 @@ function start() {
         moveinimigo1();
         moveinimigo2();
         moveamigo();
+        colisao();
     }
 
     function movefundo() {
@@ -143,5 +144,12 @@ function start() {
 
             }
         }
+    }
+
+    function colisao() {
+        var colisao1 = ($("#jogador").collision($("#inimigo1")));
+
+        console.log(colisao1);
+
     }
 }
